@@ -3,463 +3,143 @@
   box-sizing: border-box;
   margin: 0;
 }
-.container {
-  border: 1px solid red;
-  height: 100%;
-  width: 100%;
+
+/* HEADER/NAV STYLE */
+header {
+  background-color: rgba(156, 216, 255, 0.6);
+}
+header nav {
   padding: 10px;
 }
-/* HEADER/NAV STYLE */
-.container header nav .nav-links {
+header nav .nav-links {
   border: 1px solid;
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
-  padding: 10px;
   /* background-color: rgba(156, 216, 255, 0.6); */
 }
-.container header nav .nav-links li {
-  /* background-color: lightblue; */
+header nav .nav-links li {
   /* border: 1px solid; */
-  padding: 5px 10px;
-  margin-left: 1em;
   font-family: 'Audiowide';
+  margin-left: 1em;
+  padding: 5px 10px;
+  text-shadow: 1px 2px white;
 }
-.container header nav .nav-links li a {
+header nav .nav-links li a {
   text-decoration: none;
-  color: white;
 }
+.mood-selector {
+  margin-right: auto;
+}
+.mobile-nav {
+  display: none;
+}
+.fa-bars {
+  display: none;
+}
+
+
 /* LANDING PAGE BELOW */
-main .landing {
-  /* border: 1px solid; */
-  height: 60vh;
+main {
+  height: 100%;
   width: 100%;
   background-color: rgba(156, 216, 255, 0.6);
-  font-family: 'Monoton';
-  color: white;
 }
-.name {
+.header-name {
+  font-family: 'Monoton';
+  padding-top: 50px;
   border: 1px solid black;
-    color: -webkit-linear-gradient(#022486 0%, #0AD0FD 30%, #BDFCFC 40%, #D8FFFF 44%, #00081C 44%, #00081C 50%, #074A67 52%, #1CD8FE 60%, #7FEDFE 62%, #96F5FC 70%, #0FD8FA 73%, #0BD2FD 88%, #AFFDFF 100%); 
   text-align: center;
   font-size: 5em;
   font-weight: 400;
-}
-.name:hover {
   color: rgba(71, 181, 252,0.7)
 }
-.web-developer {
-  /* border: 1px solid; */
+.header-name:hover {
+  color: white;
+}
+.header-developer {
+  font-family: 'Press Start 2P';
+  border: 1px solid;
+  text-align: center;
+  margin-top: 20px;
   text-align: center;
 }
-
-/* BELOW IS STYLING FOR DIFFERENT MOODS */
-.dark {
-  background-color: rgba(0,0,0,0.2);
+.top-three-words {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
 }
-.elegant {
-  background-color: rgba(156, 216, 255, 0.6);
+.word {
+  border: 1px solid;
+  margin: 0 10px;
+  /* border-bottom: 1px solid; */
 }
 
 
-
-
-/* TRYING OUT TYPEWRITER BELOW */
+/* ABOUT ME STYLE BELOW */
 .about-me {
-  height: 50vh;
-  width: 50vw;
-  font-family: 'Inconsolata';
-}
-.const-line {
-  text-align: left;
-}
-.name-line {
-  margin-left: 50px;
-}
-.age-line {
-  margin-left: 50px;
-}
-.location-line {
-  margin-left: 50px;
-}
-.skills-line {
-  margin-left: 50px;
-}
-.closing-line {
-  margin-left: 50px;
+  border: 1px solid black;
 }
 
 
-.const-line:after {
-  content: "";
+
+/* CAROUSEL STYLE BELOW */
+.carousel {
+  height: 25%;
+  width: 35%;
+  margin: 0 auto;
+}
+
+
+/* FOOTER/CONTACT STYLE BELOW */
+.contact-container {
+  /* margin: 0 auto; */
+}
+.footer-heading {
+  text-align: center;
+}
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
   width: 100%;
-  height: 100%;
-  line-height: 48px;
-  animation: abomination1 2s linear 1;
-  animation-fill-mode: forwards;
-}
-.name-line:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  line-height: 48px;
-  animation: abomination2 2s 2s linear 1;
-  animation-fill-mode: forwards;
-}
-.age-line:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  line-height: 48px;
-  animation: abomination3 2s 4s linear 1;
-  animation-fill-mode: forwards;
-}
-.location-line:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  line-height: 48px;
-  animation: abomination4 3s 6s linear 1;
-  animation-fill-mode: forwards;
-}
-.skills-line:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  line-height: 48px;
-  animation: abomination5 3s 9s linear 1;
-  animation-fill-mode: forwards;
-}
-.closing-line:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  line-height: 48px;
-  animation: abomination6 1.5s 12.3s linear 1;
-  animation-fill-mode: forwards;
+  margin: 0 auto;
 }
 
 
 
-  @keyframes abomination1 {
-  0% {
-    content: "c";
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .fa-bars {
+    display: block;
+    cursor: pointer;
   }
-  6% {
-    content: "co";
+  .nav-item {
+    display: none;
   }
-  12% {
-    content: "con";
+  .mobile-nav {
+    display: block;
+    width: 50%;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -50%;
+    transition: all 1s;
   }
-  18% {
-    content: "cons ";
+  .mobile-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
   }
-  24% {
-    content: "const";
+  .fa-times {
+    position: absolute;
+    right: 0;
   }
-  30% {
-    content: "const ";
-  }
-  36% {
-    content: "const a";
-  }
-  42% {
-    content: "const ab";
-  }
-  48% {
-    content: "const abo";
-  }
-  54% {
-    content: "const abou";
-  }
-  60% {
-    content: "const about";
-  }
-  66% {
-    content: "const aboutM";
-  }
-  72% {
-    content: "const aboutMe";
-  }
-  78% {
-    content: "const aboutMe ";
-  }
-  84% {
-    content: "const aboutMe =";
-  }
-  92% {
-    content: "const aboutMe = ";
-  }
-  100% {
-    content: "const aboutMe = {";
-  }
+
 }
-  /* BOTTOM IS SECOND LINE TYPEWRITER */
-
-  @keyframes abomination2 {
-    0% {
-      content: "n"
-    }
-    8% {
-      content: "na"
-    }
-    16% {
-      content: "nam"
-    }
-    24% {
-      content: "name"
-    }
-    32% {
-      content: "name:"
-    }
-    40% {
-      content: "name: "
-    }
-    48% {
-      content: "name: ''"
-    }
-    54% {
-      content: "name: 'D'"
-    }
-    62% {
-      content: "name: 'Da'"
-    }
-    70% {
-      content: "name: 'Dar'"
-    }
-    78% {
-      content: "name: 'Darr'"
-    }
-    86% {
-      content: "name: 'Darri'"
-    }
-    94% {
-      content: "name: 'Darrin'"
-    }
-    100% {
-      content: "name: 'Darrin',"
-    }
-  }
-
-  @keyframes abomination3 {
-    0% {
-      content: "a"
-    }
-    7% {
-      content: "ag"
-    }
-    14% {
-      content: "age"
-    }
-    21% {
-      content: "age "
-    }
-    28% {
-      content: "age 2"
-    }
-    35% {
-      content: "age 28"
-    }
-    42% {
-      content: "age 2"
-    }
-    49% {
-      content: "age "
-    }
-    60% {
-      content: "age"
-    }
-    69% {
-      content: "age:"
-    }
-    78% {
-      content: "age: "
-    }
-    88% {
-      content: "age: 2"
-    }
-    94% {
-      content: "age: 28"
-    }
-    100% {
-      content: "age: 28,"
-    }
-  }
-  @keyframes abomination4 {
-    4% {
-      content: "l"
-    }
-    8% {
-      content: "lo"
-    }
-    12% {
-      content: "loc"
-    }
-    16% {
-      content: "loca"
-    }
-    20% {
-      content: "locat"
-    }
-    24% {
-      content: "locato"
-    }
-    28% {
-      content: "locaton"
-    }
-    32% {
-      content: "locaton:"
-    }
-    36% {
-      content: "locaton: "
-    }
-    40% {
-      content: "locaton: ''"
-    }
-    44% {
-      content: "locaton: "
-    }
-    48% {
-      content: "locaton"
-    }
-    52% {
-      content: "locato"
-    }
-    56% {
-      content: "locat"
-    }
-    60% {
-      content: "locati"
-    }
-    64% {
-      content: "locatio"
-    }
-    68% {
-      content: "location"
-    }
-    72% {
-      content: "location:"
-    }
-    76% {
-      content: "location: "
-    }
-    80% {
-      content: "location: ''"
-    }
-    84% {
-      content: "location: 'N'"
-    }
-    88% {
-      content: "location: 'NY'"
-    }
-    95% {
-      content: "location: 'NYC'"
-    }
-    100% {
-      content: "location: 'NYC',"
-    }
-  }
-  @keyframes abomination5 {
-    0% {
-      content: "s"
-    }
-    3% {
-      content: "sk"
-    }
-    6% {
-      content: "ski"
-    }
-    9% {
-      content: "skil"
-    }
-    12% {
-      content: "skill"
-    }
-    15% {
-      content: "skills"
-    }
-    18% {
-      content: "skills:"
-    }
-    21% {
-      content: "skills: "
-    }
-    24% {
-      content: "skills: []"
-    }
-    27% {
-      content: "skills: ['']"
-    }
-    30% {
-      content: "skills: ['H']"
-    }
-    33% {
-      content: "skills: ['HT']"
-    }
-    36% {
-      content: "skills: ['HTM']"
-    }
-    39% {
-      content: "skills: ['HTML']"
-    }
-    42% {
-      content: "skills: ['HTML',]"
-    }
-    45% {
-      content: "skills: ['HTML','']"
-    }
-    48% {
-      content: "skills: ['HTML','C']"
-    }
-    51% {
-      content: "skills: ['HTML','CS']"
-    }
-    54% {
-      content: "skills: ['HTML','CSS']"
-    }
-    57% {
-      content: "skills: ['HTML','CSS',]"
-    }
-    60% {
-      content: "skills: ['HTML','CSS','']"
-    }
-    63% {
-      content: "skills: ['HTML','CSS','J']"
-    }
-    66% {
-      content: "skills: ['HTML','CSS','Ja']"
-    }
-    69% {
-      content: "skills: ['HTML','CSS','Jav']"
-    }
-    75% {
-      content: "skills: ['HTML','CSS','Java']"
-    }
-    79% {
-      content: "skills: ['HTML','CSS','JavaS']"
-    }
-    83% {
-      content: "skills: ['HTML','CSS','JavaSc']"
-    }
-    87% {
-      content: "skills: ['HTML','CSS','JavaScr']"
-    }
-    90% {
-      content: "skills: ['HTML','CSS','JavaScri']"
-    }
-    95% {
-      content: "skills: ['HTML','CSS','JavaScrip']"
-    }
-    100% {
-      content: "skills: ['HTML','CSS','JavaScript']"
-    }
-  }
-
-  @keyframes abomination6 {
-    0% {
-      content: "}"
-    }
-    100% {
-      content: "};"
-    }
-  }
