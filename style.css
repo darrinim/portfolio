@@ -32,7 +32,9 @@ header nav .nav-links li a {
   font-weight: 200;
   font-size: 20px;
   border-bottom: 2px solid rgba(255,255,255,0.4);
+  /* padding-left: 10px; */
 }
+
 .mood-selector {
   margin-right: auto;
 }
@@ -67,7 +69,8 @@ main {
   height: 100%;
   width: 100%;
   background-color: rgba(156, 216, 255, 0.6);
-  border-bottom: 1px solid #FFB8B8;
+  /* border-bottom: 2px solid #FFB8B8; */
+  border-bottom: 2px solid white;
 }
 .header-name {
   /* border: 1px solid black; */
@@ -109,28 +112,56 @@ main {
 
 /* ABOUT ME STYLE BELOW */
 .about-me {
-  margin: 80px 0;
+  font-family: 'Raleway';
+  font-size: 18px;
+  margin: 80px 5px 80px 5px;
   line-height: 60px;
-  background-color: rgba(41,93,128,0.4);
-  /* border: 1px solid black; */
+  background-color: rgba(41,93,128,0.3);
+  border-top: 1.4px solid #FFB8B8;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
 }
 .about-me .about-first {
-  margin-left: 5%;
-  border-top: 2px solid #FFB8B8;
+  color: white;
+  margin-top: 2%;
+  margin-left: 28%;
+  text-shadow: 0px 1px rgba(41,93,128,0.5);
 }
 .about-me .about-second {
-  margin-left: 20%;
+  margin-left: 33%;
+  color: #295D80;
+  text-shadow: 0px 1px rgba(255,255,255,0.5);
 }
 .about-me .about-third {
-  margin-left: 40%;
+  color: white;
+  text-shadow: 0px 1px rgba(41,93,128,0.5);
+  margin-left: 28%;
 }
 .about-me .about-fourth {
-  margin-left: 60%;
-  border-bottom: 2px solid #FFB8B8;
+  margin-left: 33%;
+  color: #295D80;
+  text-shadow: 0px 1px rgba(255,255,255,0.5);
+}
+hr {
+  border: 2px solid white;
+  margin: 0;
+}
+.second-border {
+  border: 0.5px solid rgba(41,93,128,0.3);
 }
 
 
 /* CAROUSEL STYLE BELOW */
+.projects-heading {
+  text-align: center;
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-size: 35px;
+  letter-spacing: 1px;
+  padding-bottom: 40px;
+  color: rgb(41,93,128);
+  text-shadow: 1px 0px white;
+}
 .carousel {
   height: 300px;
   margin: 0 auto;
@@ -139,7 +170,12 @@ main {
   width: 100%!important;
   height: 300px;
   object-fit: contain;
+  padding-top: 50px;
   padding-bottom: 50px;
+  /* background-color: rgba(156, 216, 255, 0.4); */
+  border-top: 1px solid rgba(255,255,255,0.4);
+  border-bottom: 1px solid white;
+  background-color: rgba(41,93,128,0.3);
 }
 
 
@@ -152,10 +188,18 @@ footer {
   padding: 50px 0 20px 0;
   text-align: center;
   /* border: 1px solid green; */
+  color: black;
+  font-size: 35px;
+  font-family: 'Raleway';
+  font-weight: 300;
+  /* text-shadow: 1px 0 #FFB8B8; */
 }
 .contact-container {
-  background-color: rgba(112,128,144,0.4);
+  /* border-top: 1px solid rgba(255,255,255,0.5); */
+  border-top: 1px solid rgba(0,0,0,0.3);
+  background-color: rgba(112,128,144,0.3);
   /* margin-top: 0; */
+  /* background-color: rgba(145,153,255,0.5); */
 }
 .contact-me {
   display: flex;
