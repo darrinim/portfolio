@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link href="https://fonts.googleapis.com/css?family=Anton|Audiowide|Monoton|Playfair+Display|Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Audiowide|Monoton|Playfair+Display|Press+Start+2P|Raleway:200,300,400,500,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -19,10 +19,13 @@
       <ul class="nav-links elegant">
         <li class="mood-selector">
           <select name="mood" id="mood">
+            <!-- <i class="fas fa-caret-down"></i> -->
+            <option value="" disabled selected hidden>Choose Your Mood</option>
             <option value="elegant">Elegant</option>
             <option value="dark">Dark</option>
             <option value="fun">Fun</option>
           </select>
+          <i class="fas fa-caret-down"></i>
         </li>
         <li><i class="fas fa-bars"></i></li>
         <li class="nav-item"><a href="">Logo</a></li>
@@ -74,13 +77,13 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="https://res.cloudinary.com/darrin-im/image/upload/v1558623557/rachel-cook-2313-unsplash_hkzl4g.jpg" alt="First slide" height: '650' width: '300'>
+          <img class="d-block w-100 img-sizing" src="https://res.cloudinary.com/darrin-im/image/upload/v1558623557/rachel-cook-2313-unsplash_hkzl4g.jpg" alt="First slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="https://res.cloudinary.com/darrin-im/image/upload/v1561061659/sushi_boat_m6c267.jpg" alt="Second slide" height: '650' width: '300'>
+          <img class="d-block w-100 img-sizing" src="https://res.cloudinary.com/darrin-im/image/upload/v1561061659/sushi_boat_m6c267.jpg" alt="Second slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="https://res.cloudinary.com/darrin-im/image/upload/v1558309716/sushi_roll2_uljdnl.jpg" alt="Third slide" height: '650' width: '300'>
+          <img class="d-block w-100 img-sizing" src="https://res.cloudinary.com/darrin-im/image/upload/v1558309716/sushi_roll2_uljdnl.jpg" alt="Third slide">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -96,14 +99,16 @@
 
   <footer>
     <div class="footer-container">
-      <h3 class="footer-heading">Let's Talk!</h3>
       <div class="contact-container">
+        <h3 class="footer-heading">Let's Talk!</h3>
         <form action="" class="contact-me">
-          <input type="text" class="contact-first-name" placeholder="First Name">
-          <input type="text" class="contact-last-name" placeholder="Last Name">
-          <input type="text" class="contact-email" placeholder="Email">
-          <input type="text" class="contact-message" placeholder="Message">
-          <input type="submit" class="submit-button">
+          <input type="text" class="get-info contact-first-name" placeholder="First Name">
+          <input type="text" class="get-info contact-last-name" placeholder="Last Name">
+          <input type="text" class="get-info contact-email" placeholder="Email">
+          <!-- <input type="text" class="get-info contact-message" placeholder="Message"> -->
+          <!-- <input type="submit" class="submit-button"> -->
+          <textarea placeholder="Message" class="get-info contact-message"></textarea>
+          <button class="submit-button">Submit</button>
       </form>
       </div>
     </div>
