@@ -5,7 +5,7 @@ console.log(currentMood);
 const changeMood = (e) => {
   e.preventDefault(); // I think I still need this...
   console.log(e.target.value); // just checking the value of what I'm grabbing
-  let funElements = document.querySelectorAll(`.${currentMood}`); // Initial test to prove it worked
+  let funElements = document.querySelectorAll(`ul.${currentMood}`); // Initial test to prove it worked
   console.log(funElements);
   // Have to loop through all the elements that I grabbed with through the variable funElements and then just toggling the class name
   for(let i = 0; i < funElements.length; i++) {
