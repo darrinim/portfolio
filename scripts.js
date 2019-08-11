@@ -5,13 +5,13 @@ console.log(currentMood);
 const changeMood = (e) => {
   e.preventDefault(); // I think I still need this...
   console.log(e.target.value); // just checking the value of what I'm grabbing
-  let elegantElements = document.querySelectorAll(`.${currentMood}`); // Initial test to prove it worked
-  console.log(elegantElements);
-  // Have to loop through all the elements that I grabbed with through the variable elegantElements and then just toggling the class name
-  for(let i = 0; i < elegantElements.length; i++) {
-    elegantElements[i].classList.toggle(currentMood);
-    elegantElements[i].classList.toggle(e.target.value)
-    console.log(elegantElements[i].classList);
+  let funElements = document.querySelectorAll(`.${currentMood}`); // Initial test to prove it worked
+  console.log(funElements);
+  // Have to loop through all the elements that I grabbed with through the variable funElements and then just toggling the class name
+  for(let i = 0; i < funElements.length; i++) {
+    funElements[i].classList.toggle(currentMood);
+    funElements[i].classList.toggle(e.target.value)
+    console.log(funElements[i].classList);
   }
   currentMood = e.target.value; // Placed this here because it kept repeating
 }

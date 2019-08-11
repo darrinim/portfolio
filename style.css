@@ -14,9 +14,6 @@ header {
 }
 header nav {
   padding: 10px;
-  /* position: fixed; */
-  /* top:0; */
-  /* margin-right: auto; */
 }
 header nav .nav-links {
   /* border: 1px solid; */
@@ -188,10 +185,6 @@ hr {
 
 /* FOOTER/CONTACT STYLE BELOW */
 footer {
-  /* background-color: red; */
-  /* margin-top: 0px; */
-  /* background-color: rgba(145,153,255,0.4); */
-  /* background-color: rgba(41,93,128,0.3); */
   background-color: rgba(156, 216, 255, 0.6);
   padding-top: 30px;
 }
@@ -238,6 +231,7 @@ input {
   border: none;
   border-radius: 30px;
   margin: 5px 0;
+  padding-left: 10px;
 }
 .get-info::placeholder {
   padding-left: 15px;
