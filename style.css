@@ -3,6 +3,9 @@
   box-sizing: border-box;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* HEADER/NAV STYLE */
 header {
@@ -11,6 +14,9 @@ header {
 }
 header nav {
   padding: 10px;
+  /* position: fixed; */
+  /* top:0; */
+  /* margin-right: auto; */
 }
 header nav .nav-links {
   /* border: 1px solid; */
@@ -61,10 +67,10 @@ select {
 }
 .tree {
   float: right;
-  padding-right: 70px;
+  padding-right: 90px;
   padding-bottom: 5px;
   height: 160px;
-  transform: skew(-4deg,0deg);
+  transform: skew(-8deg,0deg);
 }
 
 /* LANDING PAGE BELOW */

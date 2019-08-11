@@ -36,30 +36,15 @@ cancel.addEventListener('click', function () {
   console.log(cancel);
 })
 
-//
-// let originalURL = 'https://docs.google.com/spreadsheets/d/10c8Z-7FMbj_htFGaNwAjuOKKMSfKReuVC05ObQqhQqc/edit#gid=0'
-// let id = '10c8Z-7FMbj_htFGaNwAjuOKKMSfKReuVC05ObQqhQqc'
-// let source = `https://spreadsheets.google.com/feeds/list/${id}/od6/public/values?alt=json`
 
 // BELOW IS API CONNECTION
 
-// original NEW url https://docs.google.com/spreadsheets/d/1K-A_YU_SC9yevfyvhsw97skP48P8VARCRoJPzav1Tc4/edit#gid=0
-// link that was given on the popup https://docs.google.com/spreadsheets/d/e/2PACX-1vR9PfMdbSCKoGZNZ0eCAekS6dwma-V8PNp_pEoh3nOC7Dn35rMdgtmTzRxRbXF9gcPIyDeacYElUVvQ/pubhtml
-// https://docs.google.com/spreadsheets/d/1K-A_YU_SC9yevfyvhsw97skP48P8VARCRoJPzav1Tc4/edit#gid=0
-// I believe this is the ID '1K-A_YU_SC9yevfyvhsw97skP48P8VARCRoJPzav1Tc4'
+
 let originalURL = 'https://docs.google.com/spreadsheets/d/1K-A_YU_SC9yevfyvhsw97skP48P8VARCRoJPzav1Tc4/edit#gid=0'
-
-// ID COMES FROM THE URL THAT IS IN THE ADDRESS BAR ONCE THE SHEET HAS BEEN CREATED/SHARED
-// let id =  '15PmioBi2dQEkewpqI7MDkDpvcVF0Trw8vmarAQbwoHk'
-
 let id = '1K-A_YU_SC9yevfyvhsw97skP48P8VARCRoJPzav1Tc4'
-
-
-// BELOW URL IS HOW GOOGLE ALLOWS US TO ACCESS THE SHARED FILE AS JSON
-// let source = `https://spreadsheets.google.com/feeds/list/${id}/od6/public/values?alt=json`
 let source = `https://spreadsheets.google.com/feeds/list/${id}/od6/public/values?alt=json`
 
-// https://spreadsheets.google.com/feeds/list/15PmioBi2dQEkewpqI7MDkDpvcVF0Trw8vmarAQbwoHk/1/public/values?alt=json
+
 
 fetch(source)
   .then( res => res.json())
@@ -136,3 +121,16 @@ function createCards(projects){
   })
     document.querySelector('.carousel-item').classList.add('active');
 }
+
+
+
+// Smooth Scroll Functionality BELOW
+document.querySelector('#about').scrollIntoView({
+  behavior: 'smooth'
+});
+document.querySelector('#projects').scrollIntoView({
+  behavior: 'smooth'
+});
+document.querySelector('#contact').scrollIntoView({
+  behavior: 'smooth'
+});
