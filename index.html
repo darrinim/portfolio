@@ -15,10 +15,10 @@
 <body>
   <header>
     <!-- BELOW IS DESKTOP NAV -->
-    <nav>
-      <ul class="nav-links fun dark">
+    <nav class="fun-bg">
+      <ul class="nav-links fun fun-bg">
         <li class="mood-selector">
-          <select name="mood" id="mood">
+          <select name="mood" class="fun-text-color-secondary mood">
             <!-- <i class="fas fa-caret-down"></i> -->
             <option value="" disabled selected hidden>Choose Your Mood</option>
             <option value="fun">Fun</option>
@@ -28,9 +28,9 @@
           <i class="fas fa-caret-down"></i>
         </li>
         <li><i class="fas fa-bars"></i></li>
-        <li class="nav-item"><a href="">About Me</a></li>
-        <li class="nav-item"><a href="">Projects</a></li>
-        <li class="nav-item"><a href="">Contact Me</a></li>
+        <li class="nav-item"><a class="fun-text-color-secondary nav-a"href="#about">About Me</a></li>
+        <li class="nav-item"><a class="fun-text-color-secondary nav-a"href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="fun-text-color-secondary nav-a"href="#contact">Contact Me</a></li>
       </ul>
     </nav>
 
@@ -38,19 +38,19 @@
     <nav class="mobile-nav">
       <ul class="mobile-ul fun">
         <i class="fas fa-times"></i>
-        <li><a href="">About Me</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact Me</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- BELOW IS LANDING PAGE -->
-  <main>
+  <main class="fun-bg">
     <div class="landing-page">
       <h1 class="header-name">Darrin Im</h1>
       <h2 class="header-developer">Web Developer</h2>
-      <div class="top-three-words">
+      <div class="top-three-words fun-text-color-secondary">
         <h3 class="word first-word">Simple.</h3>
         <h3 class="word first-word">Fun.</h3>
         <h3 class="word first-word">Clean.</h3>
@@ -59,17 +59,17 @@
     </div>
 
     <!-- BELOW IS ABOUT ME -->
-    <div class="about-me" id="about">
-      <p class="sentence about-first">As a former musician, I love the ability to create in new ways.</p>
-      <p class="sentence about-second">I enjoy designing smooth, clean layouts with a touch of color.</p>
-      <p class="sentence about-third">HTML, CSS, and JavaScript for fast, easy to use applications.</p>
-      <p class="sentence about-fourth">Endlessly working to improve with a little help from my friends, and a lot of coffee.</p>
+    <div class="about-me fun-bg-secondary" id="about">
+      <p class="sentence about-first fun-text-color-primary">As a former musician, I love the ability to create in new ways.</p>
+      <p class="sentence about-second fun-text-color-secondary">I enjoy designing smooth, clean layouts with a touch of color.</p>
+      <p class="sentence about-third fun-text-color-primary">HTML, CSS, and JavaScript for fast, easy to use applications.</p>
+      <p class="sentence about-fourth fun-text-color-secondary">Endlessly working to improve with a little help from my friends, and a lot of coffee.</p>
       <hr>
       <hr class="second-border">
     </div>
 
     <!-- BELOW IS PROJECTS/CAROUSEL -->
-    <h3 class="projects-heading" id="projects">Projects</h3>
+    <h3 class="projects-heading fun-text-color-primary" id="projects">Projects</h3>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -98,9 +98,9 @@
     </div>
   </main>
 
-  <footer>
-    <div class="footer-container" id="contact">
-      <div class="contact-container">
+  <footer class="fun-bg">
+    <div class="footer-container fun-bg" id="contact">
+      <div class="contact-container fun-bg-secondary">
         <h3 class="footer-heading">Let's Talk<span class="footer-italic">!</span></h3>
         <form action="" class="contact-me">
           <input type="text" class="get-info contact-first-name" placeholder="First Name">

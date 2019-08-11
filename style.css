@@ -13,7 +13,7 @@ html {
 /* HEADER/NAV STYLE */
 header {
   /* border: 1px solid; */
-  background-color: rgba(156, 216, 255, 0.6);
+  background-color: #c4e8ff;
 }
 header nav {
   padding: 10px;
@@ -30,7 +30,7 @@ header nav .nav-links li {
   font-family: 'Raleway';
   padding: 5px 10px;
 }
-header nav .nav-links li a {
+.nav-a {
   text-decoration: none;
   color: #295D80;
   text-shadow: -1px 0px white;
@@ -42,7 +42,7 @@ header nav .nav-links li a {
 .mood-selector {
   margin-right: auto;
 }
-#mood {
+.mood {
   border: 0px;
   outline: 0px;
   background: transparent;
@@ -78,9 +78,16 @@ main {
   /* border: 1px solid; */
   height: 100%;
   width: 100%;
-  background-color: rgba(156, 216, 255, 0.6);
+  background-color: #c4e8ff;
   border-bottom: 3px solid white;
 }
+
+
+
+
+
+
+
 .header-name {
   /* border: 1px solid black; */
   font-family: 'Monoton';
@@ -123,31 +130,31 @@ main {
   font-size: 18px;
   margin: 80px 10px 80px 10px;
   line-height: 60px;
-  background-color: rgba(41,93,128,0.3);
+  background-color: #96beda;
   border-top: 1.4px solid #FFB8B8;
   border-top-left-radius: 40%;
   border-top-right-radius: 40%;
 }
 .about-me .about-first {
-  color: white;
+  /* color: white; */
   margin-top: 2%;
   margin-left: 28%;
-  text-shadow: 0px 1px rgba(41,93,128,0.5);
+  /* text-shadow: 0px 1px rgba(41,93,128,0.5); */
 }
 .about-me .about-second {
   margin-left: 33%;
-  color: #295D80;
-  text-shadow: 0px 1px rgba(255,255,255,0.5);
+  /* color: #295D80;
+  text-shadow: 0px 1px rgba(255,255,255,0.5); */
 }
 .about-me .about-third {
-  color: white;
-  text-shadow: 0px 1px rgba(41,93,128,0.5);
+  /* color: white; */
+  /* text-shadow: 0px 1px rgba(41,93,128,0.5); */
   margin-left: 28%;
 }
 .about-me .about-fourth {
   margin-left: 33%;
-  color: #295D80;
-  text-shadow: 0px 1px rgba(255,255,255,0.5);
+  /* color: #295D80; */
+  /* text-shadow: 0px 1px rgba(255,255,255,0.5); */
 }
 hr {
   border: 2px solid white;
@@ -166,7 +173,6 @@ hr {
   font-size: 35px;
   letter-spacing: 1px;
   padding-bottom: 40px;
-  /* color: rgb(41,93,128); */
   color: black;
   text-shadow: 1px 0px white;
 }
@@ -180,7 +186,6 @@ hr {
   object-fit: contain;
   padding-top: 50px;
   padding-bottom: 50px;
-  /* background-color: rgba(156, 216, 255, 0.4); */
   border-top: 4px solid white;
   border-bottom: 1px solid white;
 }
@@ -188,7 +193,7 @@ hr {
 
 /* FOOTER/CONTACT STYLE BELOW */
 footer {
-  background-color: rgba(156, 216, 255, 0.6);
+  background-color: #c4e8ff;
   padding-top: 30px;
 }
 .footer-heading {
@@ -209,7 +214,7 @@ footer {
 .contact-container {
   border-bottom-right-radius: 40%;
   border-bottom-left-radius: 40%;
-  background-color: rgba(41,93,128,0.3);
+  background-color: #96beda;
   border-bottom: 1.4px solid #FFB8B8;
   border-top: 2px solid white;
   margin: 0 10px;
@@ -218,7 +223,7 @@ footer {
   display: flex;
   flex-direction: column;
   line-height: 50px;
-  max-width: 300px;
+  max-width: 600px;
   width: 100%;
   margin: 0 auto;
   padding: 15px;
@@ -253,6 +258,52 @@ input {
 }
 .submit-button:hover {
   background-color: red;
+}
+
+
+
+
+
+
+/* VARIOUS MOOD STYLE CHANGES */
+
+.fun-bg {
+  background-color: #c4e8ff;
+}
+.dark-bg {
+  background-color: black;
+}
+.elegant-bg {
+  background-color: #eee2dc;
+}
+.fun-text-color-primary {
+  color: white;
+  text-shadow: 0px 1px rgba(41,93,128,0.5);
+}
+.fun-text-color-secondary {
+  color: #295D80;
+  text-shadow: 0px 1px rgba(255,255,255,0.5);
+}
+.dark-text-color-primary {
+  color: white;
+}
+.dark-text-color-secondary {
+  color: white;
+}
+.elegant-text-color-primary {
+  color: white;
+}
+.elegant-text-color-secondary {
+  color: #ac3b61;
+}
+.fun-bg-secondary {
+  background-color: #96beda;
+}
+.dark-bg-secondary {
+  background-color: blue;
+}
+.elegant-bg-secondary {
+  background-color: #edc7b7;
 }
 
 

@@ -1,4 +1,4 @@
-let currentMood = document.querySelector('#mood').value // this is going to be grabbing the value from the select dropdown menu
+let currentMood = 'fun' // this is going to be grabbing the value from the select dropdown menu
 console.log(currentMood);
 
 // function to change color scheme
@@ -6,16 +6,41 @@ const changeMood = (e) => {
   e.preventDefault(); // I think I still need this...
   console.log(e.target.value); // just checking the value of what I'm grabbing
   let funElements = document.querySelectorAll(`ul.${currentMood}`); // Initial test to prove it worked
+  let funMain = document.querySelectorAll(`.${currentMood}-bg`);
+  let funPrimary = document.querySelectorAll(`.${currentMood}-text-color-primary`); // This targets about me first/third sentences
+  let funSecondary = document.querySelectorAll(`.${currentMood}-text-color-secondary`); // This targets about me second and fourth sentences
+  let funBgSecondary = document.querySelectorAll(`.${currentMood}-bg-secondary`); // This targets the about/contact container backgrounds
+  console.log('this is funMain',funMain);
   console.log(funElements);
   // Have to loop through all the elements that I grabbed with through the variable funElements and then just toggling the class name
   for(let i = 0; i < funElements.length; i++) {
-    funElements[i].classList.toggle(currentMood);
-    funElements[i].classList.toggle(e.target.value)
+    funElements[i].classList.remove(currentMood);
+    funElements[i].classList.add(e.target.value)
     console.log(funElements[i].classList);
+  }
+  for(let i = 0; i < funMain.length; i++) {
+    funMain[i].classList.remove(`${currentMood}-bg`);
+    funMain[i].classList.add(`${e.target.value}-bg`)
+    console.log(funMain[i].classList);
+  }
+  for(let i = 0; i < funPrimary.length; i++) {
+    funPrimary[i].classList.remove(`${currentMood}-text-color-primary`);
+    funPrimary[i].classList.add(`${e.target.value}-text-color-primary`)
+    console.log(funPrimary[i].classList);
+  }
+  for(let i = 0; i < funSecondary.length; i++) {
+    funSecondary[i].classList.remove(`${currentMood}-text-color-secondary`);
+    funSecondary[i].classList.add(`${e.target.value}-text-color-secondary`)
+    console.log(funSecondary[i].classList);
+  }
+  for(let i = 0; i < funBgSecondary.length; i++) {
+    funBgSecondary[i].classList.remove(`${currentMood}-bg-secondary`);
+    funBgSecondary[i].classList.add(`${e.target.value}-bg-secondary`);
+    console.log(funBgSecondary[i].classList);
   }
   currentMood = e.target.value; // Placed this here because it kept repeating
 }
-let selectMood = document.querySelector('#mood');
+let selectMood = document.querySelector('.mood');
 selectMood.addEventListener('change', changeMood)
 
 
