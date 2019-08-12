@@ -6,6 +6,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 /* HEADER/NAV STYLE */
 header {
   /* border: 1px solid; */
@@ -60,6 +61,7 @@ select {
 .fa-bars {
   display: none;
 }
+
 /* LANDING PAGE BELOW */
 main {
   /* border: 1px solid; */
@@ -68,13 +70,6 @@ main {
   background-color: #c4e8ff;
   border-bottom: 3px solid white;
 }
-
-
-
-
-
-
-
 .header-name {
   /* border: 1px solid black; */
   font-family: 'Monoton';
@@ -84,9 +79,6 @@ main {
   font-weight: 400;
   color: #FFB8B8;
   word-spacing: 15px;
-}
-.header-name:hover {
-  color: white;
 }
 .header-developer {
   /* border: 1px solid; */
@@ -114,7 +106,7 @@ main {
 /* ABOUT ME STYLE BELOW */
 .about-me {
   font-family: 'Raleway';
-  font-size: 18px;
+  font-size: 20px;
   margin: 80px 10px 80px 10px;
   line-height: 60px;
   background-color: #96beda;
@@ -130,18 +122,12 @@ main {
 }
 .about-me .about-second {
   margin-left: 33%;
-  /* color: #295D80;
-  text-shadow: 0px 1px rgba(255,255,255,0.5); */
 }
 .about-me .about-third {
-  /* color: white; */
-  /* text-shadow: 0px 1px rgba(41,93,128,0.5); */
   margin-left: 28%;
 }
 .about-me .about-fourth {
   margin-left: 33%;
-  /* color: #295D80; */
-  /* text-shadow: 0px 1px rgba(255,255,255,0.5); */
 }
 hr {
   border: 2px solid white;
@@ -186,9 +172,8 @@ footer {
 .footer-heading {
   padding: 50px 0 20px 0;
   text-align: center;
-  /* border: 1px solid green; */
   color: white;
-  font-size: 35px;
+  font-size: 50px;
   font-family: 'Raleway';
   font-weight: 300;
   text-shadow: 1px 0px rgba(0,0,0,0.4);
@@ -253,7 +238,7 @@ input {
 
 
 
-/* VARIOUS MOOD STYLE CHANGES */
+/* BACKGROUND MOOD STYLE CHANGES */
 
 .fun-bg {
   background-color: #c4e8ff;
@@ -264,36 +249,50 @@ input {
 .elegant-bg {
   background-color: #eee2dc;
 }
+
+/* HEADING NAME MOOD STYLE CHANGES */
 .fun-heading-color {
   color: #FFB8B8;
 }
 .dark-heading-color {
-  color: red;
+  color: #46bcde;
 }
 .elegant-heading-color {
-
+  color: #ac3b61;
+  font-family: 'Playfair Display';
+  font-weight: 900;
 }
+
+/* PRIMARY SENTENCES MOOD STYLE CHANGES */
 .fun-text-color-primary {
   color: white;
   text-shadow: 0px 1px rgba(41,93,128,0.5);
 }
+.dark-text-color-primary {
+  color: white;
+  text-shadow: 0.5px 0.5px #e94f64;
+}
+.elegant-text-color-primary {
+  font-family: 'eb garamond';
+  color: white;
+  text-shadow: 0.5px 0.5px black;
+}
+
+/* SECONDARY SENTENCES MOOD STYLE CHANGES */
 .fun-text-color-secondary {
   color: #295D80;
   text-shadow: 0px 1px rgba(255,255,255,0.5);
 }
-.dark-text-color-primary {
-  color: white;
-}
 .dark-text-color-secondary {
-  color: #46bcde;
-  text-shadow: none;
-}
-.elegant-text-color-primary {
-  color: white;
+  color: #e94f64;
+  text-shadow: 0.5px 0.5px black;
 }
 .elegant-text-color-secondary {
-  color: #ac3b61;
+  font-family: 'eb garamond';
+  color: #123A69;
 }
+
+/* SECONDARY BACKGROUND MOOD STYLE CHANGES */
 .fun-bg-secondary {
   background-color: #96beda;
 }

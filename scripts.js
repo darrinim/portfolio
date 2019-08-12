@@ -112,6 +112,7 @@ class Card {
     cardTitle.classList.add('card-title');
     cardTitle.innerText = this.title
 
+// WILL ADD THE FOLLOWING AT A LATER TIME
     // const cardContent = new CardContent(this.description)
     // console.log('this is cardConten ', cardContent)
     // col.appendChild(cardTitle)
