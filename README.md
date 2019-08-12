@@ -15,3 +15,26 @@
 > My MVP will feature a clean simple layout that is responsive to all devices. I will have an About Me, Projects, and Contact Me sections that can all be easily accessed from the top navigation bar. The navigation bar has a smooth scroll added on that will quickly take users to the selected areas. The Projects portion of my page will feature a bootstrap carousel set to a timer that will use Google Sheets API to allow for continuous easy updates from an excel spreadsheet.
 
 ##External Resources
+
+> For curved border radius
+<https://stackoverflow.com/questions/17040709/can-i-create-a-div-with-a-curved-bottom>
+
+> For smooth scroll
+<https://css-tricks.com/snippets/jquery/smooth-scrolling/>
+
+> Tremendous help for dark color scheme
+<https://graphicdesign.stackexchange.com/questions/20258/colors-to-use-with-black-background>
+
+> Essential for Google Sheets API Call
+<https://codepen.io/GoCodeYourself/pen/LwQKYj>
+
+> Helped with color combination
+<https://www.canva.com/learn/100-color-combinations/>
+
+> Helped with choosing different font combinations
+<https://venngage.com/blog/how-to-choose-fonts/>
+
+> Also helped with color combinations
+<https://visme.co/blog/website-color-schemes/>
+
+> Credit to Joe with the color switcher exercises which helped me figure out the mood switcher scheme
