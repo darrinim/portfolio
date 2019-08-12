@@ -300,9 +300,13 @@ input {
   background-color: #edc7b7;
 }
 
-
-
-
+/* HAMBURGER MENU STYLE CHANGE */
+.fun-hamburger-color {
+  color: black;
+}
+.dark-hamburger-color {
+  color: white;
+}
 
 
 /* MEDIA QUERIES */
