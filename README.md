@@ -42,7 +42,7 @@
 ## Post-Build
 
 ### Deployed site on Surge
-<http://parched-spade.surge.sh/#contact>
+<vague-grandfather.surge.sh>
 
 ### Screenshots of running project in browser
 #### Mobile Elegant Mood
