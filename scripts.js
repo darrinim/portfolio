@@ -10,6 +10,7 @@ const changeMood = (e) => {
   let funPrimary = document.querySelectorAll(`.${currentMood}-text-color-primary`); // This targets about me first/third sentences
   let funSecondary = document.querySelectorAll(`.${currentMood}-text-color-secondary`); // This targets about me second and fourth sentences
   let funBgSecondary = document.querySelectorAll(`.${currentMood}-bg-secondary`); // This targets the about/contact container backgrounds
+  let funHeadingColor = document.querySelectorAll(`.${currentMood}-heading-color`); // This targets the h1-name
   console.log('this is funMain',funMain);
   console.log(funElements);
   // Have to loop through all the elements that I grabbed with through the variable funElements and then just toggling the class name
@@ -37,6 +38,11 @@ const changeMood = (e) => {
     funBgSecondary[i].classList.remove(`${currentMood}-bg-secondary`);
     funBgSecondary[i].classList.add(`${e.target.value}-bg-secondary`);
     console.log(funBgSecondary[i].classList);
+  }
+  for(let i = 0; i < funHeadingColor.length; i++) {
+    funHeadingColor[i].classList.remove(`${currentMood}-heading-color`);
+    funHeadingColor[i].classList.add(`${e.target.value}-heading-color`);
+    console.log(funHeadingColor[i].classList);
   }
   currentMood = e.target.value; // Placed this here because it kept repeating
 }
