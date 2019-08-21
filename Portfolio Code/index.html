@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<link href="https://fonts.googleapis.com/css?family=Anton|Audiowide|EB+Garamond:400,500,600|Josefin+Sans:300,400|Monoton|Playfair+Display:400,700,900|Poiret+One|Press+Start+2P|Raleway:200,300,400,500,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <!-- BELOW IS DESKTOP NAV -->
+    <nav class="fun-bg">
+      <ul class="nav-links fun fun-bg">
+        <li class="mood-selector">
+          <select name="mood" class="fun-text-color-secondary mood">
+            <option value="" disabled selected hidden>Choose Your Mood</option>
+            <option value="fun">Fun</option>
+            <option value="dark">Dark</option>
+            <option value="elegant">Elegant</option>
+          </select>
+          <i class="fas fa-caret-down"></i>
+        </li>
+        <li><i class="fas fa-bars fun-hamburger-color"></i></li>
+        <li class="nav-item"><a class="fun-text-color-secondary nav-a"href="#about">About Me</a></li>
+        <li class="nav-item"><a class="fun-text-color-secondary nav-a"href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="fun-text-color-secondary nav-a"href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <!-- BELOW IS FOR HAMBURGER MENU -->
+    <nav class="mobile-nav">
+      <ul class="mobile-ul fun">
+        <i class="fas fa-times"></i>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BELOW IS LANDING PAGE -->
+  <main class="fun-bg">
+    <div class="landing-page">
+      <h1 class="header-name fun-heading-color">Darrin Im</h1>
+      <h2 class="header-developer">Web Developer</h2>
+      <div class="top-three-words fun-text-color-secondary">
+        <h3 class="word first-word">Simple.</h3>
+        <h3 class="word first-word">Fun.</h3>
+        <h3 class="word first-word">Clean.</h3>
+      </div>
+    </div>
+
+    <!-- BELOW IS ABOUT ME -->
+    <div class="about-me fun-bg-secondary" id="about">
+      <p class="sentence about-first fun-text-color-primary">As a former musician, I love the ability to create in new ways.</p>
+      <p class="sentence about-second fun-text-color-secondary">I enjoy designing smooth, clean layouts with a touch of color.</p>
+      <p class="sentence about-third fun-text-color-primary">HTML, CSS, and JavaScript for fast, easy to use applications.</p>
+      <p class="sentence about-fourth fun-text-color-secondary">Endlessly working to improve with a little help from my friends, and a lot of coffee.</p>
+      <hr>
+      <hr class="second-border">
+    </div>
+
+    <!-- BELOW IS PROJECTS/CAROUSEL -->
+    <h3 class="projects-heading fun-text-color-primary" id="projects">Projects</h3>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </main>
+    <!-- BELOW IS FOOTER/CONTACT -->
+  <footer class="fun-bg">
+    <div class="footer-container fun-bg" id="contact">
+      <div class="contact-container fun-bg-secondary">
+        <h3 class="footer-heading">Let's Talk<span class="footer-italic">!</span></h3>
+        <form action="" class="contact-me">
+          <input type="text" class="get-info contact-first-name" placeholder="First Name">
+          <input type="text" class="get-info contact-last-name" placeholder="Last Name">
+          <input type="text" class="get-info contact-email" placeholder="Email">
+          <textarea placeholder="Message" class="get-info contact-message"></textarea>
+          <button class="submit-button">Submit</button>
+      </form>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+</body>
+
+
+
+
+
+</html>
